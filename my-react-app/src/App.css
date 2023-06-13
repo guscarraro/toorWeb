@@ -1,0 +1,25 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+* {
+  font-family: Poppins, sans-serif;
+  /* font-family: Montserrat; */
+}
+
+header.rolagem {
+  background-color: rgb(97, 97, 98);
+  color: rgb(38, 250, 229);
+  width: 100%;
+  height: 50px;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
