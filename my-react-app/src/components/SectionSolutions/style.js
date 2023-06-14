@@ -23,6 +23,11 @@ export const SectionSolutionStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .card1 {
     margin-top: 1%;
   }

@@ -76,7 +76,7 @@ export const SectionFAQ = () => {
             >
               <div>
                 <strong className="elemento-pergunta">
-                  {elemento.pergunta} ↓
+                  {elemento.pergunta} <span>+</span>
                 </strong>
               </div>
               <Descricao

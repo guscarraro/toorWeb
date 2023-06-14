@@ -145,7 +145,15 @@ export const ElementoContainer = styled.div`
   margin-top: 6px;
   display: flex;
   flex-direction: column;
-
+  span {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid white;
+    border-radius: 2px;
+  }
+  span:hover {
+    border: rgb(38, 250, 229);
+  }
   .resposta {
     border-radius: 20px;
     width: 85%;
@@ -158,10 +166,13 @@ export const ElementoContainer = styled.div`
   .elemento-pergunta:hover {
     width: 85%;
     padding: 5%;
-    font-size: xx-large;
+    font-size: large;
     color: rgb(38, 250, 229);
     transition: 0.5s;
     max-width: 50%;
+    span {
+      border: 2px solid rgb(38, 250, 229);
+    }
   }
   .elemento-pergunta {
     transition: 0.5s;
