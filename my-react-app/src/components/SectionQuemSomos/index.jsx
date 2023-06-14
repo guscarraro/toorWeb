@@ -1,12 +1,18 @@
 import React from "react";
 import { SectionQuemSomosStyle } from "./style";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const SectionQuemSomos = () => {
+  Aos.init();
   return (
-    <SectionQuemSomosStyle>
+    <SectionQuemSomosStyle id="QS">
       <div className="container-geral">
-        <div>
-          <h3>QUEM SOMOS</h3>
+        <div data-aos="fade-down">
+          <div className="container-tema">
+            <p className="imgTema"></p>
+            <h2>QUEM SOMOS</h2>
+          </div>
           <p className="descricao">
             A TOOR nasceu em 2003 para ajudar empresas de pequeno e médio porte
             a ter organização e segurança em suas redes de computadores. Com

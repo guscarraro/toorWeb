@@ -1,33 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { SectionSolutionStyle, CardStyle } from "./style";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const SectionSolutions = () => {
-  const listRef = useRef(null);
-
   useEffect(() => {
-    const handleScroll = () => {
-      const { scrollLeft, clientWidth, scrollWidth } = listRef.current;
-
-      if (scrollLeft + clientWidth >= scrollWidth) {
-        // Aqui você pode fazer uma chamada para carregar mais cards
-        // ou adicionar novos cards à lista existente
-      }
-    };
-
-    listRef.current.addEventListener("scroll", handleScroll);
-
-    return () => {
-      listRef.current.removeEventListener("scroll", handleScroll);
-    };
+    Aos.init({ duration: 2000 });
   }, []);
+
   return (
-    <SectionSolutionStyle>
-      <h3>Solucoes</h3>
-      <ul ref={listRef} className="container-geral-cards">
-        <CardStyle>
+    <SectionSolutionStyle id="solucoes">
+      <div className="container-tema" data-aos="fade-up">
+        <p className="imgTema"></p>
+        <h2>SOLUÇÕES</h2>
+      </div>
+      <ul className="container-geral-cards" data-aos="fade-up">
+        <CardStyle className="card1">
           <div className="container-info">
             <div className="container-titulo">
-              <p></p>
+              <p className="imgTema1"></p>
               <h4>MONITORAMENTO DE DADOS / SUPORTE</h4>
             </div>
             <div>
@@ -39,10 +30,10 @@ export const SectionSolutions = () => {
           </div>
           <p className="icon"></p>
         </CardStyle>
-        <CardStyle>
+        <CardStyle className="card2">
           <div className="container-info">
             <div className="container-titulo">
-              <p></p>
+              <p className="imgTema1"></p>
               <h4>SERVIDOR DE INTERNET / FIREWALL</h4>
             </div>
             <div>
@@ -55,10 +46,10 @@ export const SectionSolutions = () => {
           </div>
           <p className="icon2"></p>
         </CardStyle>
-        <CardStyle>
+        <CardStyle className="card3">
           <div className="container-info">
             <div className="container-titulo">
-              <p className="seta-container-titulo"></p>
+              <p className="imgTema1"></p>
               <h4>SERVIDOR DE ARQUIVOS / FILESERVER</h4>
             </div>
             <div>
@@ -71,10 +62,10 @@ export const SectionSolutions = () => {
           </div>
           <p className="icon3"></p>
         </CardStyle>
-        <CardStyle>
+        <CardStyle className="card4">
           <div className="container-info">
             <div className="container-titulo">
-              <p className="seta-container-titulo"></p>
+              <p className="imgTema1"></p>
               <h4>SUPORTE SERVIDORES / LINUX</h4>
             </div>
             <div>
@@ -87,10 +78,10 @@ export const SectionSolutions = () => {
           </div>
           <p className="icon4"></p>
         </CardStyle>
-        <CardStyle>
+        <CardStyle className="card5">
           <div className="container-info">
             <div className="container-titulo">
-              <p className="seta-container-titulo"></p>
+              <p className="imgTema1"></p>
               <h4>VIRTUALIZACAO / CLOUD</h4>
             </div>
             <div>

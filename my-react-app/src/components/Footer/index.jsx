@@ -1,10 +1,13 @@
 import React from "react";
 import { FooterFullStyle } from "./style";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const FooterStyle = () => {
+  Aos.init();
   return (
-    <FooterFullStyle>
-      <div className="container-geral">
+    <FooterFullStyle id="Contato">
+      <div className="container-geral" data-aos="fade-up">
         <div className="container-loc">
           <div>
             <p className="imgLoc"></p>

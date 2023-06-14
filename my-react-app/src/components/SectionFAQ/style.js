@@ -4,6 +4,7 @@ import imgPergunta1 from "../../assets/pergunta1.png";
 import imgPergunta2 from "../../assets/pergunta2.png";
 import imgPergunta3 from "../../assets/pergunta3.png";
 import imgPergunta4 from "../../assets/pergunta4.png";
+import imgSeta from "../../assets/setaLado2.png";
 import styled from "styled-components";
 
 export const SectionFAQStyle = styled.section`
@@ -25,6 +26,20 @@ export const SectionFAQStyle = styled.section`
     }
     100% {
       transform: translateY(0) rotate(0);
+    }
+  }
+  .container-tema {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+
+    gap: 20px;
+    .imgTema {
+      background-image: url(${imgSeta});
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -137,6 +152,7 @@ export const ElementoContainer = styled.div`
     padding: 10px;
     margin-top: 6px;
     margin-top: 15px;
+    color: rgb(38, 250, 229);
     border: solid 2px rgb(38, 250, 229);
   }
   .elemento-pergunta:hover {

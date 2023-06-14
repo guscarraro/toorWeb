@@ -2,13 +2,15 @@ import styled from "styled-components";
 import imgCard1 from "../../assets/detective.png";
 import imgCard1hover from "../../assets/detective2.png";
 import imgCard2 from "../../assets/firewall.png";
-import imgCard2hover from "../../assets/firewall2.png";
+import imgCard2hover from "../../assets/firewall3.png";
 import imgCard3 from "../../assets/database.png";
-import imgCard3hover from "../../assets/database2.png";
+import imgCard3hover from "../../assets/database3.png";
 import imgCard4 from "../../assets/linux.png";
 import imgCard4hover from "../../assets/linux1.png";
 import imgCard5 from "../../assets/cloudcomputing.png";
-import imgCard5hover from "../../assets/cloud-computing1.png";
+import imgCard5hover from "../../assets/cloud-computing3.png";
+import imgSeta from "../../assets/setaLado2.png";
+import imgSetaPreta from "../../assets/setaPreta.png";
 
 export const SectionSolutionStyle = styled.section`
   background-color: black;
@@ -21,6 +23,21 @@ export const SectionSolutionStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .card1 {
+    margin-top: 1%;
+  }
+  .card2 {
+    margin-top: 3%;
+  }
+  .card3 {
+    margin-top: 1%;
+  }
+  .card4 {
+    margin-top: 3%;
+  }
+  .card5 {
+    margin-top: 1%;
+  }
 
   h3 {
     font-size: xx-large;
@@ -65,6 +82,24 @@ export const SectionSolutionStyle = styled.section`
   li:hover + li {
     transform: translateY(7px) scale(0.9);
   }
+  .container-tema {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+
+    gap: 20px;
+    .imgTema {
+      background-image: url(${imgSeta});
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+    }
+
+    h2 {
+      font-family: "Russo One", sans-serif;
+    }
+  }
 `;
 
 export const CardStyle = styled.li`
@@ -82,10 +117,25 @@ export const CardStyle = styled.li`
   border: solid 2px;
   border-radius: 10px;
   justify-content: space-between;
-  transform: rotate(-2deg);
+  /* transform: rotate(-2deg); */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #f2f2f2;
   transition: transform 0.3s, box-shadow 0.3s;
+  h4 {
+    font-family: "Russo One", sans-serif;
+  }
+  .container-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    .imgTema1 {
+      background-image: url(${imgSetaPreta});
+      background-size: 100% 100%;
+      width: 30px;
+      height: 20px;
+    }
+  }
 
   .container-info {
     margin: 0;

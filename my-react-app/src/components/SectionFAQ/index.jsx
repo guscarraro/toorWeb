@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Descricao, ElementoContainer, SectionFAQStyle } from "./style";
 import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const SectionFAQ = () => {
+  Aos.init();
   const [elementos, setElementos] = useState([
     {
       id: 1,
@@ -59,10 +62,13 @@ export const SectionFAQ = () => {
   };
 
   return (
-    <SectionFAQStyle>
+    <SectionFAQStyle id="FAQ">
       <div className="container-geral">
-        <div className="container-info">
-          <h3>PERGUNTAS FREQUENTES / FAQ</h3>
+        <div className="container-info" data-aos="fade-down">
+          <div className="container-tema">
+            <p className="imgTema"></p>
+            <h2>PERGUNTAS FREQUENTES / FAQ</h2>
+          </div>
           {elementos.map((elemento) => (
             <ElementoContainer
               key={elemento.id}
@@ -70,7 +76,7 @@ export const SectionFAQ = () => {
             >
               <div>
                 <strong className="elemento-pergunta">
-                  -{elemento.pergunta}
+                  {elemento.pergunta} ↓
                 </strong>
               </div>
               <Descricao
@@ -82,7 +88,7 @@ export const SectionFAQ = () => {
             </ElementoContainer>
           ))}
         </div>
-        <div className="container-imgPergunta">
+        <div className="container-imgPergunta" data-aos="fade-down">
           <p className="imgPergunta"></p>
           <div className="cont1">
             <p className="imgPergunta1"></p>
