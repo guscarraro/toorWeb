@@ -15,6 +15,7 @@ export const FooterFullStyle = styled.footer`
   margin: 0;
   color: white;
   justify-content: flex-end;
+  color: rgb(38, 250, 229);
   .container-geral {
     width: 100%;
     display: flex;

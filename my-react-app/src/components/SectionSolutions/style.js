@@ -39,8 +39,8 @@ export const SectionSolutionStyle = styled.section`
     display: flex;
   }
   li {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 300px;
+    max-width: 300px;
 
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ export const SectionSolutionStyle = styled.section`
   .card2 {
     margin-left: 4%;
     margin-right: 4%;
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .card3 {
     margin-left: 4%;
@@ -68,7 +68,7 @@ export const SectionSolutionStyle = styled.section`
   .card4 {
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .card5 {
     margin-left: 2%;
@@ -149,7 +149,7 @@ export const CardStyle = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 275px;
+  min-width: 300px;
   height: 500px;
   border: solid 2px;
   border-radius: 10px;
@@ -193,7 +193,7 @@ export const CardStyle = styled.li`
     }
   }
   .icon {
-    margin-left: 30px;
+    margin-left: 40px;
     position: relative;
     width: 75%;
     height: 150px;
@@ -224,7 +224,7 @@ export const CardStyle = styled.li`
   }
 
   .icon2 {
-    margin-left: 30px;
+    margin-left: 55px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -234,7 +234,7 @@ export const CardStyle = styled.li`
   }
 
   .icon3 {
-    margin-left: 30px;
+    margin-left: 42px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -243,7 +243,7 @@ export const CardStyle = styled.li`
     animation: floating 2s ease-in-out infinite;
   }
   .icon4 {
-    margin-left: 30px;
+    margin-left: 44px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -252,13 +252,13 @@ export const CardStyle = styled.li`
     animation: floating 2s ease-in-out infinite;
   }
   .icon5 {
-    margin-left: 30px;
+    margin-top: 40px;
+    margin-left: 43px;
     position: relative;
     width: 65%;
     height: 150px;
     background-size: 100% 100%;
     background-image: url(${imgCard5});
     animation: floating 2s ease-in-out infinite;
-    opacity: 0.2;
   }
 `;

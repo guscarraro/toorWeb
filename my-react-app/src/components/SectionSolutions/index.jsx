@@ -35,7 +35,7 @@ export const SectionSolutions = () => {
     {
       title: "VIRTUALIZACAO / CLOUD",
       description:
-        "A melhor maneira de compartilhar os recursos físicos de servidores com escalabilidade e disponibilidade. Virtualização dos servidores internos, análise do ambiente para melhor solução em virtualização, gerenciamento dos servidores na nuvem.",
+        "A melhor maneira de compartilhar os recursos fisicos de servidores com escabilidade e disponibilidade. Virtualização dos servidores internos, análise do ambiente para melhor solução em virtualização, gerenciamento dos servidores na nuvem",
       icon: "icon5",
     },
   ];
@@ -175,9 +175,10 @@ export const SectionSolutions = () => {
       >
         {cardsData.map((card, index) => (
           <CardStyle
+            centerPadding={200}
             key={index}
             id={card.icon}
-            className={`card${index + 1} custom-card`}
+            className={`custom-card`}
             data-aos="fade-up"
           >
             <div className="container-info">

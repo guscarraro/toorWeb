@@ -16,7 +16,7 @@ export const SectionFAQStyle = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
   @keyframes rotateAndMove {
     0% {
       transform: translateY(0) rotate(0);
@@ -44,7 +44,7 @@ export const SectionFAQStyle = styled.section`
   }
 
   .container-geral {
-    height: auto;
+    height: 90vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -141,6 +141,7 @@ export const Descricao = styled.div`
 export const ElementoContainer = styled.div`
   border-radius: 20px;
   width: 85%;
+
   padding: 10px;
   margin-top: 6px;
   display: flex;
@@ -165,7 +166,7 @@ export const ElementoContainer = styled.div`
   }
   .elemento-pergunta:hover {
     width: 85%;
-    padding: 5%;
+    padding: 0;
     font-size: large;
     color: rgb(38, 250, 229);
     transition: 0.5s;
@@ -174,7 +175,7 @@ export const ElementoContainer = styled.div`
       border: 2px solid rgb(38, 250, 229);
     }
   }
-  .elemento-pergunta {
+  .elemento-pergunta::after {
     transition: 0.5s;
   }
 `;
