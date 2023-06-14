@@ -34,7 +34,7 @@ export const StyledHeader = styled.header`
     }
     .contato:hover {
       background-color: rgb(38, 250, 229);
-      color: rgb(97, 97, 98);
+      color: black;
       border: 2px solid rgb(38, 250, 229);
     }
     .logo-branca {
@@ -70,7 +70,7 @@ export const StyledHeader = styled.header`
         bottom: 0;
         left: 0;
         width: 0;
-        height: 2px;
+        height: 3px;
         background-color: rgb(38, 250, 229);
         transition: width 0.7s ease-in-out;
       }

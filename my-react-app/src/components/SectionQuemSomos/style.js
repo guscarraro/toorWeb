@@ -1,7 +1,16 @@
 import styled from "styled-components";
-import imgQuemSomos from "../../assets/quemSomos.jpg";
+import imgQuemSomos from "../../assets/reuniao1.jpg";
 
 export const SectionQuemSomosStyle = styled.section`
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 255),
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 255)
+    ),
+    url(${imgQuemSomos});
+  background-size: cover;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,11 +18,12 @@ export const SectionQuemSomosStyle = styled.section`
   height: 80vh;
   padding: 0;
   margin: 0;
-  margin-top: 5%;
+  color: rgb(38, 250, 229);
+
   .container-geral {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     div {
@@ -21,10 +31,10 @@ export const SectionQuemSomosStyle = styled.section`
       width: 40%;
     }
   }
-  .imgQuemSomos {
+  /* .imgQuemSomos {
     background-image: url(${imgQuemSomos});
     background-size: 100% 100%;
-    width: 100%;
-    height: 500px;
-  }
+    width: 40%;
+    height: 40vh;
+  } */
 `;

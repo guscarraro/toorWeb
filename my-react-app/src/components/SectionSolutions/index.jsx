@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { SectionSolutionStyle, CardStyle } from "./style";
 
 export const SectionSolutions = () => {
+  const listRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { scrollLeft, clientWidth, scrollWidth } = listRef.current;
+
+      if (scrollLeft + clientWidth >= scrollWidth) {
+        // Aqui você pode fazer uma chamada para carregar mais cards
+        // ou adicionar novos cards à lista existente
+      }
+    };
+
+    listRef.current.addEventListener("scroll", handleScroll);
+
+    return () => {
+      listRef.current.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <SectionSolutionStyle>
       <h3>Solucoes</h3>
-      <ul className="container-geral-cards">
+      <ul ref={listRef} className="container-geral-cards">
         <CardStyle>
           <div className="container-info">
             <div className="container-titulo">

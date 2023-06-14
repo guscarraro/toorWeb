@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
     "react-scroll-snap": "^1.0.0",
+    "react-slick": "^0.29.0",
     "react-use-scroll-snap": "^0.0.4",
     "styled-components": "^6.0.0-rc.3"
   },

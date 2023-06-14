@@ -68,9 +68,11 @@ export const SectionFAQ = () => {
               key={elemento.id}
               onClick={() => toggleDescricao(elemento.id)}
             >
-              <strong>
-                {elemento.id} - {elemento.pergunta}
-              </strong>
+              <div>
+                <strong className="elemento-pergunta">
+                  -{elemento.pergunta}
+                </strong>
+              </div>
               <Descricao
                 className="resposta"
                 visivel={elemento.visivel ? "true" : "false"}
@@ -80,8 +82,16 @@ export const SectionFAQ = () => {
             </ElementoContainer>
           ))}
         </div>
-        <div>
-          <p className="imgPerguntas"></p>
+        <div className="container-imgPergunta">
+          <p className="imgPergunta"></p>
+          <div className="cont1">
+            <p className="imgPergunta1"></p>
+            <p className="imgPergunta2"></p>
+          </div>
+          <div className="cont2">
+            <p className="imgPergunta3"></p>
+            <p className="imgPergunta4"></p>
+          </div>
         </div>
       </div>
     </SectionFAQStyle>

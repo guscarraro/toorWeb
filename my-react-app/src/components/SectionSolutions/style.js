@@ -11,32 +11,41 @@ import imgCard5 from "../../assets/cloudcomputing.png";
 import imgCard5hover from "../../assets/cloud-computing1.png";
 
 export const SectionSolutionStyle = styled.section`
+  background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100vh;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
     font-size: xx-large;
-    color: black;
+    color: whitesmoke;
   }
 
   .container-geral-cards {
+    width: 95%;
+    min-height: 80vh;
     margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    overflow: scroll;
   }
 
   li:hover {
     border: solid 2px rgb(38, 250, 229);
+    background-color: none;
+    background-color: rgb(38, 250, 229);
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     .icon {
       background-image: url(${imgCard1hover});
     }
@@ -53,20 +62,30 @@ export const SectionSolutionStyle = styled.section`
       background-image: url(${imgCard5hover});
     }
   }
+  li:hover + li {
+    transform: translateY(7px) scale(0.9);
+  }
 `;
 
 export const CardStyle = styled.li`
-  background-color: white;
-  margin: none;
+  background: linear-gradient(to right, rgb(38, 250, 229), #3e3e3e);
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-top: 4%;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  min-height: 400px;
+  min-width: 22%;
+  max-height: 60vh;
   border: solid 2px;
   border-radius: 10px;
   justify-content: space-between;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  transition: transform 0.3s, box-shadow 0.3s;
 
   .container-info {
     margin: 0;
@@ -80,7 +99,7 @@ export const CardStyle = styled.li`
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
     100% {
       transform: translateY(0);
