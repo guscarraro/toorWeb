@@ -48,16 +48,16 @@ export const Header = () => {
           <a href="#solucoes" className="smooth-scroll">
             Soluções
           </a>
-          <a href="#QS" className="smooth-scroll">
-            Quem Somos
-          </a>
-          <a href="#Depoimento" className="smooth-scroll">
-            Depoimento
-          </a>
           <a href="#FAQ" className="smooth-scroll">
             FAQ
           </a>
+          <a href="#QS" className="smooth-scroll">
+            Quem Somos
+          </a>
           <a href="https://blog.toor.com.br/">Blog</a>
+          <a href="#Depoimento" className="smooth-scroll">
+            Depoimento
+          </a>
         </nav>
         <div>
           <a className="contato smooth-scroll" href="#Contato">

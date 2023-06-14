@@ -23,24 +23,56 @@ export const SectionSolutionStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .scroll-arrow {
+    color: white;
+  }
   ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    width: 80%;
   }
+
+  .loading {
+    color: white;
+  }
+  Slider {
+    display: flex;
+  }
+  li {
+    min-width: 250px;
+    max-width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      color: white;
+    }
+  }
+
   .card1 {
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 1%;
   }
   .card2 {
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 3%;
   }
   .card3 {
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 1%;
   }
   .card4 {
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 3%;
   }
   .card5 {
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 1%;
   }
 
@@ -50,7 +82,7 @@ export const SectionSolutionStyle = styled.section`
   }
 
   .container-geral-cards {
-    width: 95%;
+    width: 85%;
     min-height: 80vh;
     margin: 0;
     padding-left: 5%;
@@ -58,8 +90,8 @@ export const SectionSolutionStyle = styled.section`
     padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    overflow: scroll;
   }
 
   li:hover {
@@ -117,8 +149,8 @@ export const CardStyle = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 22%;
-  max-height: 60vh;
+  min-width: 275px;
+  height: 500px;
   border: solid 2px;
   border-radius: 10px;
   justify-content: space-between;
@@ -161,14 +193,38 @@ export const CardStyle = styled.li`
     }
   }
   .icon {
+    margin-left: 30px;
     position: relative;
-    width: 65%;
+    width: 75%;
     height: 150px;
     background-size: 100% 100%;
     background-image: url(${imgCard1});
     animation: floating 2s ease-in-out infinite;
   }
+  .slick-slider .slick-list .slick-track .slick-slide.slick-active {
+    /* Estilos desejados para as li ativas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide {
+    /* Estilos desejados para as li ativas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .descricao {
+    max-height: 100px;
+    z-index: 1;
+  }
+
   .icon2 {
+    margin-left: 30px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -178,6 +234,7 @@ export const CardStyle = styled.li`
   }
 
   .icon3 {
+    margin-left: 30px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -186,6 +243,7 @@ export const CardStyle = styled.li`
     animation: floating 2s ease-in-out infinite;
   }
   .icon4 {
+    margin-left: 30px;
     position: relative;
     width: 65%;
     height: 150px;
@@ -194,11 +252,13 @@ export const CardStyle = styled.li`
     animation: floating 2s ease-in-out infinite;
   }
   .icon5 {
+    margin-left: 30px;
     position: relative;
     width: 65%;
     height: 150px;
     background-size: 100% 100%;
     background-image: url(${imgCard5});
     animation: floating 2s ease-in-out infinite;
+    opacity: 0.2;
   }
 `;

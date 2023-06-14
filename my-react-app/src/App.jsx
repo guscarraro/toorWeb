@@ -12,6 +12,8 @@ import { SectionSolutions } from "./components/SectionSolutions";
 import { FooterStyle } from "./components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [count, setCount] = useState(0);

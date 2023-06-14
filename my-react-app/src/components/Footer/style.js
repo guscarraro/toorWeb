@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import imgFooter from "../../assets/footer.png";
+import imgCel from "../../assets/telephone.png";
+import imgLoc from "../../assets/gps.png";
 
 export const FooterFullStyle = styled.footer`
   background-image: url(${imgFooter});
@@ -28,6 +30,24 @@ export const FooterFullStyle = styled.footer`
     .container-cont {
       display: flex;
       flex-direction: column;
+    }
+    .imgCont {
+      background-image: url(${imgCel});
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+    }
+    .imgLoc {
+      background-image: url(${imgLoc});
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+    }
+    .container-dados {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
     }
   }
 `;

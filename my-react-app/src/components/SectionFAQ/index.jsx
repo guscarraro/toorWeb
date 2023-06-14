@@ -60,6 +60,21 @@ export const SectionFAQ = () => {
       )
     );
   };
+  const [timer, setTimer] = useState(null);
+  const [visivel, setVisivel] = useState(false);
+
+  const handleMouseEnter = () => {
+    clearTimeout(timer);
+    const newTimer = setTimeout(() => {
+      setVisivel(true);
+    }, 500); // Defina o tempo de atraso desejado aqui (em milissegundos)
+    setTimer(newTimer);
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(timer);
+    setVisivel(false);
+  };
 
   return (
     <SectionFAQStyle id="FAQ">
@@ -73,6 +88,8 @@ export const SectionFAQ = () => {
             <ElementoContainer
               key={elemento.id}
               onClick={() => toggleDescricao(elemento.id)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <div>
                 <strong className="elemento-pergunta">
@@ -80,7 +97,7 @@ export const SectionFAQ = () => {
                 </strong>
               </div>
               <Descricao
-                className="resposta"
+                className={`resposta ${elemento.visivel ? "visivel" : ""}`}
                 visivel={elemento.visivel ? "true" : "false"}
               >
                 {elemento.texto}

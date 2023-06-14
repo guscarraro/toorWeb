@@ -9,29 +9,30 @@ export const FooterStyle = () => {
     <FooterFullStyle id="Contato">
       <div className="container-geral" data-aos="fade-up">
         <div className="container-loc">
-          <div>
+          <div className="container-dados">
             <p className="imgLoc"></p>
             <p>LOCALIZACAO</p>
           </div>
           <p>
-            Rua Francisco Rocha 62 - Sala 1904 Batel <br /> - Curitiba - PR -
-            CEP 80.420-130
+            Rua Francisco Rocha 62 - <br /> Sala 1904 Batel <br /> - Curitiba -
+            PR - CEP 80.420-130
           </p>
         </div>
         <div className="container-cont">
-          <div>
+          <div className="container-dados">
             <p className="imgCont"></p>
             <p>CONTATO</p>
           </div>
           <div>
             <p>
-              (41) 3526-0710 (41) 98837-7401 - Encarregado de Dados: Rodrigo
-              Otavio
+              (41) 3526-0710 <br />
+              (41) 98837-7401 <br />- Encarregado de Dados: Rodrigo Otavio
             </p>
             <p>Entre em contato pelo:</p>
             <a href="https://app.octo.legal/solicitacao/dados?idEmpresa=617171643dbcff71af433c82">
               Portal de Privacidade
             </a>
+            <br />
             <a href="https://app.octo.legal/solicitacao/dados?idEmpresa=617171643dbcff71af433c82">
               Politica de Privacidade
             </a>
