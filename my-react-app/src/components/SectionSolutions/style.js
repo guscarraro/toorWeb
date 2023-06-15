@@ -23,6 +23,7 @@ export const SectionSolutionStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   .scroll-arrow {
     color: white;
   }
@@ -50,6 +51,7 @@ export const SectionSolutionStyle = styled.section`
   }
   li {
     @media (min-width: 1900px) {
+      margin-top: 5%;
       margin: 20px;
       padding: 0;
       width: 500px;
@@ -125,6 +127,7 @@ export const SectionSolutionStyle = styled.section`
       height: 100vh;
       margin-left: 20px;
       margin-right: 20px;
+      margin-top: 5%;
     }
   }
 
@@ -158,7 +161,7 @@ export const SectionSolutionStyle = styled.section`
     flex-direction: row;
     color: white;
     align-items: center;
-
+    margin-bottom: 5%;
     gap: 20px;
     .imgTema {
       background-image: url(${imgSeta});
