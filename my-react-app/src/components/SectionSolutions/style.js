@@ -124,10 +124,9 @@ export const SectionSolutionStyle = styled.section`
     justify-content: space-between;
     @media (min-width: 1900px) {
       min-width: auto;
-      height: 100vh;
+      height: 90vh;
       margin-left: 20px;
       margin-right: 20px;
-      margin-top: 5%;
     }
   }
 
