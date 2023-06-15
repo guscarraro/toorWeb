@@ -32,11 +32,12 @@ export const SectionSolutionStyle = styled.section`
     width: 80%;
     @media (min-width: 1900px) {
       li {
-        width: auto;
+        width: 0;
         display: flex;
-        height: 1200px;
+        height: 0;
         align-items: stretch;
         justify-content: space-between;
+        visibility: hidden;
       }
     }
   }
