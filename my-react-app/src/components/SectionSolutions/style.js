@@ -53,7 +53,7 @@ export const SectionSolutionStyle = styled.section`
       padding: 0;
       width: 500px;
       display: flex;
-      height: 1200px;
+      height: 1000px;
       align-items: stretch;
       justify-content: space-between;
       .icon,
@@ -61,7 +61,7 @@ export const SectionSolutionStyle = styled.section`
       .icon3,
       .icon4,
       .icon5 {
-        margin-top: 400px;
+        margin-top: 290px;
         height: 250px;
         margin-left: 91px;
       }
@@ -202,7 +202,7 @@ export const CardStyle = styled.li`
       padding: 0;
       width: 500px;
       display: flex;
-      height: 1200px;
+      height: 1000px;
       align-items: stretch;
       justify-content: space-between;
     }

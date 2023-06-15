@@ -29,6 +29,7 @@ function App() {
         <SectionSolutions data-aos="fade-up"></SectionSolutions>
         <SectionFAQ></SectionFAQ>
         <SectionQuemSomos></SectionQuemSomos>
+
         <FooterStyle></FooterStyle>
       </div>
     </>
