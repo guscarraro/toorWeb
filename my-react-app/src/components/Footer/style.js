@@ -67,12 +67,13 @@ export const FooterFullStyle = styled.footer`
   .container-geral {
     width: 100%;
     display: flex;
+    height: auto;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 5%;
-    margin-top: 10%;
+    margin-top: 20%;
     @media (max-width: 768px) {
       margin-top: 95%;
       display: flex;
