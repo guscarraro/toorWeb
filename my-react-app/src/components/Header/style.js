@@ -109,6 +109,17 @@ export const StyledHeader = styled.header`
       height: 65px;
     }
 
+    @media (min-width: 1900px) {
+      .logo-branca {
+        margin: 0;
+        background-image: url(${imgLogoBranca});
+        background-size: 90% 100%;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 85px;
+      }
+    }
+
     nav {
       gap: 20px;
       display: flex;
