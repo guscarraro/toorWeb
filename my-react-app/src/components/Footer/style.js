@@ -58,6 +58,7 @@ export const FooterFullStyle = styled.footer`
     width: 100%;
     height: 300px;
     @media (min-width: 1900px) {
+      width: 850px;
       height: 800px;
     }
   }
