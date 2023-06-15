@@ -30,6 +30,15 @@ export const SectionSolutionStyle = styled.section`
     display: flex;
     flex-direction: row;
     width: 80%;
+    @media (min-width: 1900px) {
+      li {
+        width: auto;
+        display: flex;
+        height: 1200px;
+        align-items: stretch;
+        justify-content: space-between;
+      }
+    }
   }
 
   .loading {
@@ -39,12 +48,30 @@ export const SectionSolutionStyle = styled.section`
     display: flex;
   }
   li {
-    min-width: 300px;
+    @media (min-width: 1900px) {
+      margin: 20px;
+      padding: 0;
+      width: 500px;
+      display: flex;
+      height: 1200px;
+      align-items: stretch;
+      justify-content: space-between;
+      .icon,
+      .icon2,
+      .icon3,
+      .icon4,
+      .icon5 {
+        margin-top: 400px;
+        height: 250px;
+        margin-left: 91px;
+      }
+    }
+    /* min-width: 300px;
     max-width: 300px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     button {
       color: white;
     }
@@ -92,6 +119,12 @@ export const SectionSolutionStyle = styled.section`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media (min-width: 1900px) {
+      min-width: auto;
+      height: 100vh;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
   li:hover {
@@ -158,6 +191,22 @@ export const CardStyle = styled.li`
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #f2f2f2;
   transition: transform 0.3s, box-shadow 0.3s;
+  @media (max-width: 769px) {
+    min-width: 200px;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 1900px) {
+    .custom-card {
+      padding: 0;
+      width: 500px;
+      display: flex;
+      height: 1200px;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+  }
   h4 {
     font-family: "Russo One", sans-serif;
   }

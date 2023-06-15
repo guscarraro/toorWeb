@@ -17,6 +17,9 @@ export const SectionFAQStyle = styled.section`
   align-items: center;
   width: 100%;
   height: 100vh;
+  @media (max-width: 769px) {
+    height: 120vh;
+  }
   @keyframes rotateAndMove {
     0% {
       transform: translateY(0) rotate(0);
@@ -58,6 +61,25 @@ export const SectionFAQStyle = styled.section`
     .container-imgPergunta {
       display: flex;
       flex-direction: column-reverse;
+      width: 50%;
+    }
+    @media (max-width: 1023px) {
+      .container-imgPergunta {
+        max-width: 100%;
+        height: 500px;
+        top: 220%;
+        left: 50;
+        right: 50;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        opacity: 0.3;
+        z-index: 0;
+        .imgPergunta {
+          max-width: 100%;
+        }
+      }
     }
     .imgPergunta {
       width: 85vh;
@@ -122,6 +144,7 @@ export const SectionFAQStyle = styled.section`
       flex-direction: column;
       align-items: center;
       width: 100%;
+      z-index: 1;
     }
   }
   h3 {
@@ -141,7 +164,7 @@ export const Descricao = styled.div`
 export const ElementoContainer = styled.div`
   border-radius: 20px;
   width: 85%;
-
+  transition: 0.5s;
   padding: 10px;
   margin-top: 6px;
   display: flex;
@@ -171,6 +194,9 @@ export const ElementoContainer = styled.div`
     color: rgb(38, 250, 229);
     transition: 0.5s;
     max-width: 50%;
+    @media (min-width: 1500px) {
+      font-size: 1.7rem;
+    }
     span {
       border: 2px solid rgb(38, 250, 229);
     }

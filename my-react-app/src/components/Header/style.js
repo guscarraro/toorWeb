@@ -13,6 +13,69 @@ export const StyledHeader = styled.header`
   padding-bottom: 5px;
   margin: 0;
   z-index: 1000;
+
+  nav a {
+    display: inline-block;
+  }
+  .menu-toggle {
+    visibility: hidden;
+  }
+
+  @media (max-width: 700px) {
+    .menu-hamburguer {
+      margin-left: 4%;
+      visibility: visible;
+      top: 0;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      opacity: 0.8;
+      justify-content: center;
+      transition: 0.7s;
+      justify-content: space-evenly;
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: rgb(38, 250, 229);
+        border: 2px solid rgb(38, 250, 229);
+        padding: 10px;
+        border-radius: 20px;
+      }
+      a:hover {
+        background-color: rgb(38, 250, 229);
+        color: black;
+      }
+    }
+    nav a {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: flex;
+      visibility: visible;
+    }
+    .menu-toggle {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 50;
+    }
+
+    .menu-toggle:hover {
+    }
+
+    .menu-toggle .svg-inline--fa {
+      /* Adicione estilos adicionais ao ícone */
+    }
+
+    /* Exemplo de estilo para a classe .open do menu */
+    #nav.open {
+      background-color: black;
+    }
+  }
   .container {
     display: flex;
     flex-direction: row;
