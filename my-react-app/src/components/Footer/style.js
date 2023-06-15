@@ -47,6 +47,7 @@ export const FooterFullStyle = styled.footer`
     }
   }
   .depoimentos {
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
