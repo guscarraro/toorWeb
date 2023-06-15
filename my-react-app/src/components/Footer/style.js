@@ -59,7 +59,7 @@ export const FooterFullStyle = styled.footer`
     height: 300px;
     @media (min-width: 1900px) {
       width: 850px;
-      height: 800px;
+      height: 730px;
     }
   }
   .container-loc-cont {

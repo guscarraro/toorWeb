@@ -64,7 +64,7 @@ export const SectionSolutionStyle = styled.section`
       .icon3,
       .icon4,
       .icon5 {
-        margin-top: 290px;
+        margin-top: 250px;
         height: 250px;
         margin-left: 91px;
       }
@@ -124,7 +124,7 @@ export const SectionSolutionStyle = styled.section`
     justify-content: space-between;
     @media (min-width: 1900px) {
       min-width: auto;
-      height: 90vh;
+      max-height: 90vh;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -186,7 +186,7 @@ export const CardStyle = styled.li`
   flex-direction: column;
   align-items: center;
   min-width: 300px;
-  height: 500px;
+  max-height: 880px;
   border: solid 2px;
   border-radius: 10px;
   justify-content: space-between;
@@ -200,14 +200,17 @@ export const CardStyle = styled.li`
     margin-left: 20px;
     margin-right: 20px;
   }
-  @media (min-width: 1900px) {
+  @media (min-width: 1919px) {
     .custom-card {
       padding: 0;
-      width: 500px;
+      min-width: 500px;
       display: flex;
-      height: 1000px;
+      max-height: 916px;
       align-items: stretch;
       justify-content: space-between;
+      .descricao {
+        padding: 2%;
+      }
     }
   }
   h4 {
