@@ -7,6 +7,10 @@ export const SectionHeader = () => {
 
   return (
     <FirstSection>
+      <a
+        className="imgWpp"
+        href="https://api.whatsapp.com/send?phone=5541988377401"
+      ></a>
       <h1 data-aos="fade-right">
         MONITORAMENTO E <br />
         SEGURANÇA DE DADOS

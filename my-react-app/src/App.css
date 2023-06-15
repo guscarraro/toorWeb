@@ -48,6 +48,13 @@ h3 {
     font-size: 2.5rem;
   }
 }
+.imgWpp {
+  position: fixed;
+  background-image: url(../src/assets/wpp.png);
+  background-size: 100% 100%;
+  width: 5%;
+  height: 20px;
+}
 
 header.rolagem {
   background-color: black;

@@ -29,7 +29,10 @@ function App() {
         <SectionSolutions data-aos="fade-up"></SectionSolutions>
         <SectionFAQ></SectionFAQ>
         <SectionQuemSomos></SectionQuemSomos>
-
+        <a
+          className="imgWpp"
+          href="https://api.whatsapp.com/send?phone=5541988377401"
+        ></a>
         <FooterStyle></FooterStyle>
       </div>
     </>
