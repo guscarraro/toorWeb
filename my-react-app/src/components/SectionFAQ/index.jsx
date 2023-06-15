@@ -53,10 +53,11 @@ export const SectionFAQ = () => {
 
   const toggleDescricao = (id) => {
     setElementos((prevState) =>
-      prevState.map((elemento) =>
-        elemento.id === id
-          ? { ...elemento, visivel: !elemento.visivel }
-          : elemento
+      prevState.map(
+        (elemento) =>
+          elemento.id === id
+            ? { ...elemento, visivel: !elemento.visivel }
+            : { ...elemento, visivel: false } // Define visivel como false para todas as outras respostas
       )
     );
   };

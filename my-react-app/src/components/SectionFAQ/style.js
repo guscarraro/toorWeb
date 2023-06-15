@@ -161,6 +161,7 @@ export const Descricao = styled.div`
   opacity: ${({ visivel }) => (visivel === "true" ? 1 : 0)};
   transition: opacity 0.3s ease-in-out;
 `;
+
 export const ElementoContainer = styled.div`
   border-radius: 20px;
   width: 85%;
@@ -202,6 +203,12 @@ export const ElementoContainer = styled.div`
     }
   }
   .elemento-pergunta::after {
+    transition: 0.5s;
+  }
+  .elemento-pergunta:before {
+    transition: 0.5s;
+  }
+  .elemento-pergunta {
     transition: 0.5s;
   }
 `;
