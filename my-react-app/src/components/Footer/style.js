@@ -12,7 +12,7 @@ export const FooterFullStyle = styled.footer`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   padding: 0;
   margin: 0;
   color: white;
