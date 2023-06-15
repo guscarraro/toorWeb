@@ -87,8 +87,8 @@ export const Header = () => {
           <a href="#QS" className="smooth-scroll">
             Quem Somos
           </a>
-          <a href="#Depoimento" className="smooth-scroll">
-            Depoimento
+          <a href="#Contato" className="smooth-scroll">
+            Depoimentos
           </a>
           <a href="https://blog.toor.com.br/">Blog</a>
           {/* Menu hamburguer */}
